@@ -27,7 +27,12 @@
                     , is the lead 
                 @endif
                 <br>
-                {{ $pokemon['type'] }}
+                @foreach ($pokemon['types'] as $type)
+                    {{ $type }}
+                    @if ($loop->last == false)
+                        / 
+                    @endif             
+                @endforeach
                 <br>
             </li>
         @endforeach

@@ -20,15 +20,15 @@ Route::get('/', function () {
         'teams' => [
             [
                 'name' => 'Charizard',
-                'type' => 'Fire/Flying'
+                'types' => ['Fire', 'Flying'],
             ],
             [
                 'name' => 'Lapras',
-                'type' => 'Water/Ice'
+                'types' => ['Water', 'Ice'],
             ],
             [
                 'name' => 'Pikachu',
-                'type' => 'Electric'
+                'types' => ['Electric'],
             ]
         ]
     ];
