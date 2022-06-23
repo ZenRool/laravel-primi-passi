@@ -14,5 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'name' => 'Red',
+        'class' => 'Champion',
+        'teams' => [
+            [
+                'name' => 'Charizard',
+                'type' => 'Fire/Flying'
+            ],
+            [
+                'name' => 'Lapras',
+                'type' => 'Water/Ice'
+            ],
+            [
+                'name' => 'Pikachu',
+                'type' => 'Electric'
+            ]
+        ]
+    ];
+    return view('home', $data);
 });
