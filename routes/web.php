@@ -33,4 +33,7 @@ Route::get('/', function () {
         ]
     ];
     return view('home', $data);
-});
+})->name('home');
+Route::get('/second-page', function () {
+    return view('second');
+})->name('second');

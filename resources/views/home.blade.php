@@ -7,9 +7,19 @@
     <title>Home - primi passi in laravel </title>
 </head>
 <body>
-    <h1>Questa è la home del mio primo laravel project</h1>
-    <h4>ps: Hello World</h4>
-    <hr>
+    <header>
+        <h1>Questa è la home del mio primo laravel project</h1>
+        <h4>ps: Hello World</h4> 
+        <hr>
+        <ul style="display: flex; list-style-type: none;">
+            <li style="margin-right: 30px;">
+                <a href="{{ route('home') }}">Home</a>
+            </li>
+            <li>
+                <a href="{{ route('second') }}">Seconda Pagina</a>
+            </li>
+        </ul>
+    </header>
     <br>
     <h2> Descript Pokemon trainer </h2>
     <p>
